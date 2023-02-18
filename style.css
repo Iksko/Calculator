@@ -42,13 +42,17 @@ body{
     background-color: var(--background-black);
     border-radius: 40px;
 }
+/*STATUS-BAR*/
 .status-bar{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-evenly;
     color: var(--white);
 }
 .time{
+    display: flex;
+    justify-content: center;
+    width: 20%;
     font-weight: 500;
     margin: 0 0 0 10px;
     font-size: 12px;
@@ -60,18 +64,82 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 37%;
+    width: 40%;
     border-radius: 2px 2px 15px 15px;
-    height: 25px;
+    height: 23px;
     background-color: var(--black);
 }
 .notch img{
     width: 35px;
 }
 .signal-wifi-battery{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     font-size: 10px;
     margin: 0 10px 0 0;
 }
 .signal-wifi-battery i{
-    margin: 0 3px 0 0;
+    margin: 0 7px 0 0;
+}
+/*MAIN*/
+.result{
+    position: relative;
+    top: 17%;
+}
+.calculation{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.calculation p{
+    color: var(--white);
+    font-size: 60px;
+    font-weight: 300;
+}
+.numbers{
+    color: var(--white);
+}
+.numbers{
+    height: 60%;
+    position: relative;
+    top: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 12px;
+}
+.numbers button{
+    border-radius: 50%;
+    font-size: 23px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+.numbers .light-gray-btn{
+    background-color: var(--apple-light-gray);
+}
+.numbers .dark-gray-btn{
+    background-color: var(--apple-dark-gray);
+    color: var(--white);
+}
+.numbers .dark-gray-btn #null{
+    grid-column: 1/2;
+}
+.numbers .orange-btn{
+    background-color: var(--apple-orange);
+    color: var(--white);
+}
+/*BOTTOM-LINE*/
+.bottom-line-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 18%;
+}
+.bottom-line{
+    width: 35%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--white);
 }
