@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #f2f2f2;
+}
+:root{
+    --black: #000;
+    --background-black: #080808;
+    --white: #fff;
+    --apple-light-gray: rgba(160, 160, 160, 1);
+    --apple-dark-gray: rgba(49, 49, 49, 1);
+    --apple-orange: rgba(246, 153, 6, 1);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: row;
+    padding: 30px;
+}
+.phone-frame{
+    width: 300px;
+    height: 600px;
+    background-color: var(--black);
+    border-radius: 50px;
+    padding: 10px;
+    border: 3px solid var(--apple-dark-gray);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+.phone-body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-black);
+    border-radius: 40px;
+}
+.status-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--white);
+}
+.time{
+    font-weight: 500;
+    margin: 0 0 0 10px;
+    font-size: 12px;
+}
+.time p{
+    letter-spacing: .5px;
+}
+.notch{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 37%;
+    border-radius: 2px 2px 15px 15px;
+    height: 25px;
+    background-color: var(--black);
+}
+.notch img{
+    width: 35px;
+}
+.signal-wifi-battery{
+    font-size: 10px;
+    margin: 0 10px 0 0;
+}
+.signal-wifi-battery i{
+    margin: 0 3px 0 0;
+}
