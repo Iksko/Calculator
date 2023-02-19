@@ -85,8 +85,11 @@ body{
 }
 /*MAIN*/
 .result{
+    display: flex;
+    justify-content: flex-end;
     position: relative;
     top: 17%;
+    overflow: hidden;
 }
 .calculation{
     display: flex;
@@ -95,7 +98,7 @@ body{
 }
 .calculation p{
     color: var(--white);
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 300;
 }
 .numbers{
@@ -107,7 +110,7 @@ body{
     top: 15%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 12px;
+    grid-gap: 13px;
 }
 .numbers button{
     border-radius: 50%;
